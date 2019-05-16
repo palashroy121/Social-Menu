@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Responsive Menu Navigation</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" >
+	<style>
+		* {margin: 0; padding: 0; font-family: sans-serif;}
+		.header {height: 100px; background: #34495e; padding: 0 20px; color: #fff; }
+		.logo {line-height: 100px; float: left; text-transform: uppercase;}
+		.menu {float: right; line-height: 100px; list-style: none;}
+		.menu li {display: inline-block;}
+		.menu a {color: #fff; text-transform: uppercase; padding: 0 10px; text-decoration: none; transition: .4s;}
+		.show-menu-btn, .hide-menu-btn {transition: .4s; font-size: 30px; cursor: pointer; display: none;}
+		.show-menu-btn {float: right;}
+		.show-menu-btn i {line-height: 100px;}
+		.menu a:hover, .show-menu-btn:hover, .hide-menu-btn:hover {color: #3498db;}
+		#ckk {position: absolute; visibility: hidden; z-index: -1111;}
+
+		.content {padding: 0 20px;}
+		.content img {width: 100%; max-width: 700px; margin: 20px 0; }
+		.content p {text-align: justify; }
+
+		@media screen and (max-width:800px) {
+			.show-menu-btn, .hide-menu-btn {display: block;}
+			.menu {position: fixed; width: 100%; height: 100vh; background: #333; right: -100%; top: 0; text-align: center; transition: .7s;}
+			.menu li {display: block;}
+			.menu a {padding: 10px;}
+			.hide-menu-btn {position: absolute; top: 30px; right: 30px;}
+			#ckk:checked ~ .menu {right: 0;}
+		}
+	</style>
+  </head>
+  <body>
+	<div class="header">
+		<h2 class="logo">Unix Value</h2>
+		<input type="checkbox" id="ckk">
+		<label for="ckk" class="show-menu-btn">
+			<i class="fa fa-ellipsis-h"></i>
+		</label>
+
+		<ul class="menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Services</a></li>
+			<li><a href="#">Works</a></li>
+			<li><a href="#">Contact</a></li>
+			<li><label for="ckk" class="hide-menu-btn">
+				<i class="fa fa-times"></i>
+			</label></li>
+		</ul>
+	</div>
+	<div class="content">
+		<center>
+			<img src="img_lights.jpg">
+		</center>
+		<p>text messages are used by youth and adults for personal, family, business and social purposes. Governmental and non-governmental organizations use text messaging for communication between colleagues. In the 2010s, the sending of short informal messages has become an accepted part of many cultures, as happened earlier with emailing.[1] This makes texting a quick and easy way to communicate with friends, family and colleagues, including in contexts where a call would be impolite or inappropriate (e.g., calling very late at night or when one knows the other person is busy with family or work activities). Like e-mail and voicemail, and unlike calls (in which the caller hopes to speak directly with the recipient), texting does not require the caller and recipient to both be free at the same moment; this permits communication even between busy individuals. Text messages can also be used to interact with automated systems, for example, to order products or services from e-commerce websites, or to participate in online contests. Advertisers and service providers use direct text marketing.</p>
+	</div>
+  </body>
+</html>
